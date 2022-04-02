@@ -1,0 +1,10 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+**/obj 
+**/obj 
+**/bin
+**/.vs
+AzureServices/QueueStorage/appsettingsCopy.json
+AzureServices/QueueStorage/appsettingsCopy.Development.json
