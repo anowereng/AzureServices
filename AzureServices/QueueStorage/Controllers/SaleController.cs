@@ -49,44 +49,5 @@ namespace AzurePaas.API.Controllers
 
         }
 
-        //[Route("GetUploadImage")]
-        //[HttpGet]
-        //public async Task<IActionResult> GetUploadImage(string fileName)
-        //{
-        //    var imgBytes = await _fileService.Get(fileName);
-        //    return File(imgBytes, "image/webp");
-        //}
-
-        //[Route("Download")]
-        //[HttpGet]
-        //public async Task<IActionResult> Download(string fileName)
-        //{
-        //    var imagBytes = await _fileService.Get(fileName);
-        //    return new FileContentResult(imagBytes, "application/octet-stream")
-        //    {
-        //        FileDownloadName = Guid.NewGuid().ToString() + ".webp",
-        //    };
-        //}
-
-        //[Route("Delete")]
-        //[HttpGet]
-        //public async Task<IActionResult> Delete(string fileName)
-        //{
-        //    var result = await _fileService.Delete(fileName);
-        //    return Ok(result);   
-        //}
-
-        //[Route("AzureQueue")]
-        //[HttpPost]
-
-        //public async Task<IActionResult> Post(UploadFile model)
-        //{
-        //    var connectionQueue = "DefaultEndpointsProtocol=https;AccountName=filestorage2022;AccountKey=j9/e2zF6RHXaDPZJ2KGQ9r94RHu8sviug3CVGWGikc/SDrJtilVO5+gVtDlKR/vv54oy1l4JFrp9ralrsfiddw==;EndpointSuffix=core.windows.net";
-        //    var queueName = "upload-file";
-        //    var queueClient = new QueueClient(connectionQueue, queueName);
-        //    var message =  JsonSerializer.Serialize(model);
-        //    await queueClient.SendMessageAsync(message);
-        //    return Ok();
-        //}
     }
 }
